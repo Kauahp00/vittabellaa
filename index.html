@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo3.png" type="image/png">
+    <title> Vitta Bella</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+     <a href="#" class="logo"><img src="logo.png" width="50"> Vitta Bella</a>
+
+    <nav class="navbar">
+        <a href="#home">Início</a>
+        <a href="#services">Serviços</a>
+        <a href="#about">Sobre nós</a>
+        <a href="#doctors">Profissionais</a>
+        <a href="#book">Fale conosco</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="logo1.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Seu bem-estar, nossa missão!</h3>
+        <p>Planeje sua saúde com quem se importa com você!</p>
+        <a href="#book" class="btn"> Contate-nos <span class="fas fa-chevron-right"></span> </a>
+    </div>
+
+</section>
+
+
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Nossos <span>Serviços</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" id="fisioCard">
+            <img src="fisio.png" width="50" class="icon">
+            <h3>Fisioterapia</h3>
+            <p>Recupere seus movimentos, vença a dor e viva com mais liberdade.</p>
+            <button class="btn" onclick="showMore('fisioCard')">Saiba mais  <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="acuCard">
+            <img src="acupuntura.png" width="50" class="icon">
+            <h3>Acupuntura</h3>
+            <p>Equilibre sua energia, relaxe a mente e sinta o poder da harmonia.</p>
+            <button class="btn" onclick="showMore1('acuCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="ventCard">
+            <img src="ventosas.png" width="50" class="icon">
+            <h3>Ventosaterapia</h3>
+            <p>Desbloqueie a energia, alivie tensões e melhore o fluxo sanguíneo.</p>
+            <button class="btn" onclick="showMore2('ventCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="massagCard">
+            <img src="massagem-corporal.png" width="50" class="icon">
+            <h3>Liberação Miofacial</h3>
+            <p>Alivie dores e recupere movimentos com técnicas eficazes.</p>
+            <button class="btn" onclick="showMore3('massagCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="coneCard" >
+            <img src="procurar.png" width="50" class="icon">
+            <h3>Psicanálise</h3>
+            <p>Explore sua mente e descubra o equilíbrio emocional por meio da psicanálise.</p>
+            <button class="btn" onclick="showMore4('coneCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="psicoCard">
+            <img src="psicoterapia.png" width="50" class="icon">
+            <h3>Psicoterapia Integrativa</h3>
+            <p>Promove equilíbrio emocional, cognitivo, comportamental, espiritual e físico.</p>
+            
+            <button class="btn" onclick="showMore5('psicoCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="hipCard">
+            <img src="hipnose.png" width="50" class="icon">
+            <h3>Hipnose Clínica</h3>
+            <p>Promove mudanças positivas acessando o subconsciente com relaxamento profundo.</p>
+            <button class="btn" onclick="showMore6('hipCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="terapCard">
+            <img src="saude-mental.png" width="50" class="icon">
+            <h3>Terapia de Partes</h3>
+            <p>Harmoniza aspectos da personalidade, promovendo compreensão e equilíbrio interno.</p>
+            <button class="btn" onclick="showMore7('terapCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box" id="quiroCard">
+            <img src="quiropraxia.png" width="50" class="icon">
+            <h3>Quiropraxia</h3>
+            <p>Medicina milenar que promove o ajuste completo da coluna e das articulações.</p>
+            <button class="btn" onclick="showMore8('quiroCard')">Saiba mais <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>SOBRE</span> NÓS </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/about-img.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Cuidamos da sua vida saudável</h3>
+            <p>A Vitta Bella, com 10 anos de experiência, está situada no centro de Itapetininga, na Rua Dr. Coutinho, 188. A empresa é especializada em saúde e beleza, oferecendo serviços de alta qualidade com profissionais qualificados.</p>
+            <p>Com atendimento personalizado e foco no bem-estar dos clientes, a Vitta Bella se destaca pela excelência em tratamentos que promovem autoestima e equilíbrio, consolidando-se como uma referência na cidade.</p>
+            <a href="#book" class="btn"> Saber mais <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- doctors section starts  -->
+
+<section class="doctors" id="doctors">
+
+    <h1 class="heading"> NOSSOS <span>PROFISSIONAIS</span> </h1>
+
+    <div class="box-container swiper doctors-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="box1">
+                        <img src="danielle.jpg" width="1px" height="10px">
+                    </div>
+                    <h3>Dr. Danielle Vieira</h3>
+                    <span>Fisioterapeuta e Acupunturista</span>
+                    <div class="share">
+                        <a href="https://www.facebook.com/share/15wDarUKpB/?mibextid=wwXIfr" class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/daniellecrisfisio?igsh=NXF5ajF1Z3B4cGww&utm_source=qr" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="box1">
+                        <img src="gabriel.jpg" alt="">
+                    </div>
+                    <h3>Gabriel Anzzelotti</h3>
+                    <span>Terapeuta e Hipnoterapeuta</span>
+                    <div class="share">
+                        <a href="https://www.facebook.com/share/18ztSBQP3R/" class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/gabriel.anzzelotti.terapia?igsh=Ym9sNnludmNibGF5" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="box1">
+                        <img src="Jovane.jpg" alt="">
+                    </div>
+                    <h3>Jovane Oliveira</h3>
+                    <span>Psicanalista</span>
+                    <div class="share">
+                        <a href="https://www.facebook.com/share/19ueHQJgsn/" class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/psic.jovaneoliveira?igsh=MXJuaXRoZDkzN3ZuMA==" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <div class="box1">
+                        <img src="vagner2.png" alt="">
+                    </div>
+                    <h3>Vagner</h3>
+                    <span>Quiropraxista</span>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="https://www.instagram.com/vagnercardoso433?igsh=MWJ2YXVjcjUzYWczMQ==" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+</section>
+
+
+
+
+<!-- doctors section ends -->
+
+<!-- booking section starts   -->
+
+<section class="book" id="book">
+
+    <h1 class="heading"> <span>TIRE SUA DÚVIDA </span> agora </h1>    
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/book-img.svg" alt="">
+        </div>
+
+        <form id="whatsappForm">
+            <h3>Informe seus dados</h3>
+            
+            <input type="text" id="name" placeholder="Nome" class="box" required><br><br>
+            <input type="tel" id="phone" placeholder="Telefone" class="box" required><br><br>
+            <select id="service" class="box" required>
+                <option value="">Selecione o serviço desejado</option>
+                <option value="Fisioterapia">Fisioterapia</option>
+                <option value="Acupuntura">Acupuntura</option>
+                <option value="Ventosaterapia">Ventosaterapia</option>
+                <option value="Liberação Miofacial">Liberação Miofacial</option>
+                <option value="Psicoterapia Integrativa">Psicoterapia Integrativa</option>
+                <option value="Hipnose Clínica">Hipnose Clínica</option>
+                <option value="Terapia de Partes">Terapia de Partes</option>
+                <option value="Quiropraxia">Quiropraxia</option>
+                <option value="Psicanálise">Psicanálise</option>
+            </select><br><br>
+            <input type="text" id="date" placeholder="Data de um possível agendamento" class="box" required><br><br>
+
+        
+            <input type="submit" value="Fale conosco" class="btn">
+          </form>
+
+    </div>
+
+</section>
+
+<!-- booking section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Links Rápidos</h3>
+            <a href="#home"> <i class="fas fa-chevron-right"></i> Inicio </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Serviços </a>
+            <a href="#about"> <i class="fas fa-chevron-right"></i> Sobre Nós </a>
+            <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doutores </a>
+            <a href="#book"> <i class="fas fa-chevron-right"></i> Agende agora </a>
+        </div>
+
+        <div class="box">
+            <h3>Nossos serviços</h3>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Fisioterapia </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Acupuntura </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Ventosa Terapia </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Liberação Miofacial </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Cone Hindu </a>
+        </div>
+
+        <div class="box">
+            <h3>Informações de contato</h3>
+            <a> <i class="fas fa-phone"></i> (15) 99745-4357 </a>
+            <a> <i class="fas fa-envelope"></i>VittaBella@gmail.com</a>
+            <a> <i class="fas fa-map-marker-alt"></i> Itapetininga-SP </a>
+        </div>
+
+        <div class="box">
+            <h3>Siga-nos</h3>
+            <a href="https://www.facebook.com/share/19zEy3v4Vc/?mibextid=wwXIfr"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://www.instagram.com/espaco_vittabella?igsh=MThlOTRmMHE2bHVlbQ=="> <i class="fab fa-instagram"></i> instagram </a>
+
+        </div>
+
+    </div>
+
+    <div class="credit"> Desenvolvido por <span>Kauã Vieira </span>| todos direitos reservados © </div>
+    
+
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+
+
+ <!-- Adicione o VLibras -->
+ <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script>
+
+<!-- CSS do Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- JS do Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>
